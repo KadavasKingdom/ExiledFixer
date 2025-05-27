@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+		<PropertyGroup>
+		<AssemblyName>ExiledFixer</AssemblyName>
+		<RootNamespace>ExiledFixer</RootNamespace>
+		<Configurations>LabApi;Exiled</Configurations>
+		<Nullable>annotations</Nullable>
+		<Version>0.0.0.1</Version>
+	</PropertyGroup>
+
+		<ItemGroup>
+		  <PackageReference Include="ExMod.Exiled" Version="$(ExiledVersion)" PrivateAssets="all" ExcludeAssets="runtime" Publicize="true" />
+		  <PackageReference Include="Lib.Harmony" Version="2.2.2" />
+		</ItemGroup>
+
+</Project>
