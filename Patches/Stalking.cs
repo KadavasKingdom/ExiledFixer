@@ -2,8 +2,8 @@
 
 namespace ExiledFixer.Patches;
 
-[HarmonyPatch(typeof(Exiled.Events.Patches.Events.Player.EscapingAndEscaped), nameof(Exiled.Events.Patches.Events.Player.EscapingAndEscaped.Transpiler))]
-internal static class EscapingAndEscaped
+[HarmonyPatch(typeof(Exiled.Events.Patches.Events.Scp106.Stalking), nameof(Exiled.Events.Patches.Events.Scp106.Stalking.Transpiler))]
+internal static class Stalking
 {
     [HarmonyPrefix]
     public static bool Prefix(IEnumerable<CodeInstruction> instructions, ref IEnumerable<CodeInstruction> __result)

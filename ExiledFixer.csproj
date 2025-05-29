@@ -12,5 +12,9 @@
 		  <PackageReference Include="ExMod.Exiled" Version="$(ExiledVersion)" PrivateAssets="all" ExcludeAssets="runtime" Publicize="true" />
 		  <PackageReference Include="Lib.Harmony" Version="2.2.2" />
 		</ItemGroup>
-
+	
+	<ItemGroup>
+		<None Remove=".*;*.md;LICENSE" />
+	</ItemGroup>
+	
 </Project>
