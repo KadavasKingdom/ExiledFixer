@@ -11,6 +11,8 @@ internal class EscapingAndEscaped : CustomEventsHandler
         {
             IsAllowed = ev.IsAllowed
         };
+        if (escapingEventArgs.IsAllowed)
+            escapingEventArgs.IsAllowed = ev.EscapeScenario != Escape.EscapeScenarioType.None;
         Exiled.Events.Handlers.Player.OnEscaping(escapingEventArgs);
         ev.EscapeScenario = (Escape.EscapeScenarioType)escapingEventArgs.EscapeScenario;
         ev.NewRole = escapingEventArgs.NewRole;
